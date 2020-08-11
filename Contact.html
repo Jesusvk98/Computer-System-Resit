@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<meta charset ="UTF-8">
+<link rel="stylesheet"type="text/css" href="css/contact.css"/>
+<body>
+<header>
+    <div class="Logo">
+        <img src="images/logo.png"width="250"alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Practications.html">HOME</a></li>
+            <li><a href="About The Project.html">ABOUT THE PROJECT</a></li>
+            <li><a href="#">CONSORTIUM</a></li>
+            <li><a href="#">PUBLICATIONS</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+
+        </ul>
+    </nav>
+</header>
+<section class="main">
+    <section class="articles">
+    <article>
+        
+        <h2>Location of Selfback Company</h2>
+        <p><strong>Project Coordinator: Paul Jarle Mork, NTNU</strong></p>
+        <br>
+        <h4>Opening Times</h4>
+        <ul>
+            <li>Monday 09:00 - 20:00</li>
+            <li> Tuesday 09:00 - 20:00</li>
+            <li>Wednesday 09:00 - 20:00</li>
+            <li>Thursday 09:00 - 20:00</li>
+            <li>Friday 09:00 - 20:00</li>
+            <li>Saturday 09:00 - 19:00</li>
+            <li>Sunday 12:00 - 18:00</li>
+        </ul>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+        function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(51.509865,-0.118092),
+        zoom:5,
+        }
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    </article>
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <p><strong>Project Coordinator: Paul Jarle Mork, NTNU</strong></p>
+            <h2>Contact Us</h2>
+            
+              <a href="" class="fa fa-facebook"></a>
+              <a href="" class="fa fa-twitter"></a>
+              <a href="" class="fa fa-youtube"></a>
+              <a href="" class="fa fa-linkedin"></a>
+        <div>
+            <h2>Funding</h2>
+            <p>This project has received funding from the European Union 
+            Horizon 2020 research and innovation programme under grant
+            agreement No 689043.</p>
+            <img src="Images/europe.jpg">
+        </div>    
+    </footer>
